@@ -87,6 +87,9 @@ ul{
     body header .main-menu .menu li::before{
       display: none;
     }
+    body header .main-menu .menu li:hover::before{
+    transform: scaleX(0);
+    }
     header .main-menu .menu li a:hover{
       border-bottom: 3px solid black;
     }
@@ -166,7 +169,6 @@ header {
     transform: scaleX(0);
     transition: all .3s ease;
     background-color: #000000;
-    display: none;  
   }
   header .main-menu .menu li:hover::before{
     transform: scaleX(1);
