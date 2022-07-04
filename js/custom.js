@@ -23,3 +23,23 @@ document.onclick = function (e) {
     menu.classList.remove("active");
   }
 };
+//owl carousel
+$('.slide1').owlCarousel({
+  loop: true,
+  margin: 20,
+  stagePadding: 10,
+  autoplay: true,
+  nav: false,
+  smartSpeed: 300,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:4
+      }
+  }
+});

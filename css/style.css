@@ -290,39 +290,51 @@ header {
     height: 99%;
     background-color: #2c008a8e;
   }
-  /*   catagories  */
-  .catagories{
-    margin-top: -5px;
-    padding: 80px 0px 30px 0px;
-    background-color: #f0f0f0;
+  /* service-section */
+  .service-section{
+    position: relative;
+    min-height: 500px;
   }
-.catagories .card{
-  margin-bottom: 50px;
-  padding: 80px 50px;
-  border: 1px solid #e4e4e4;
-  box-shadow: 0px 1px 10px 1px #cfcecc90;
-}
-.catagories .card h1{
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px 8px;
-    border-radius: 50px;
-    background-color: #060ea9;
-    color: #ffffff;
-}
-.catagories .card h4{
-    margin-top: 10px;
-    color: black;
+  .service-section .top-text{
+    margin-top: 30px;
+   text-align: center;
+  }
+.service-section .top-text p{
+    text-transform: uppercase;
+    color: #aeaeae;
+    font-weight: 600;
+  }
+  .service-section .top-text h1{
+    line-height: 10px;
+    text-align: center;
     font-weight: bold;
-}
-.catagories .card p{
-    color: #575655;
-}
+    color: #060EA9;
+  }
+  .service-section .slider-part{
+    margin-top: 50px;
+  }
+  .service-section .slider-part .item{
+    padding: 50px 30px 0px 30px;
+    text-align: center;
+    min-height: 340px;
+    margin: 20px auto;
+    border: #7d7d7d;
+    box-shadow: 0px 0px 15px 0px #ebebeb;
+    border-radius: 20px;
+    transition: all .2s ease;
+  }
+  .service-section .slider-part .item img{
+    width: 70px;
+    padding-bottom: 30px;
+    margin: 0 auto; 
+  }
+  .service-section .slider-part .item:hover{
+    box-shadow: 0px 0px 15px 0px #c1c0c0;
+  }
+  .service-section .slider-part .item h5{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
 
 /* about-section */
 .about-section{
@@ -432,7 +444,7 @@ header {
   width: 5px;
   height: 100%;
   background-color: #2b33d2;
-  
+
   z-index: -1;
   transition: all .6s ease-out;
   }
@@ -483,6 +495,7 @@ header {
   visibility: visible;
   transition:  visibility 0s .6s ease;
 }
+
 
   
 
