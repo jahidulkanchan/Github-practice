@@ -19,19 +19,3 @@ document.onclick = function (e) {
     menu.classList.remove("active");
   }
 };
-// Proposal
-var Yes = document.getElementById('yes');
-var No = document.getElementById('no');
-
-var ResultYes = document.getElementById('result-yes');
-var ResultNo = document.getElementById('result-no');
-
-
-Yes.onclick = function(){
-  ResultYes.classList.add("active");
-  ResultNo.classList.remove("active");
-};
-No.onclick = function(){
-  ResultNo.classList.add("active");
-  ResultYes.classList.remove("active");
-};
