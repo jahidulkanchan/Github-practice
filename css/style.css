@@ -208,7 +208,7 @@ header {
     position: relative;
     height: 3px;
     width: 35px;
-    background-color: #000000;
+    background-color: #060ea9;
     display: inline-block;
     margin: auto;
     margin-left: 3px;
@@ -230,7 +230,7 @@ header {
     width: 90%;
     height: 100%;
     transition: 0.3s ease;
-    background-color: #000000;
+    background-color: #060ea9;
   }
   #nav-toggle.active span::before {
     transform: rotate(45deg);
