@@ -3,7 +3,6 @@ var preload = document.getElementById("preloader");
 window.addEventListener("load", function(){
     preload.style.display = "none";
 });
-// 
 //sticky nav  
 window.addEventListener("scroll" , function(){
   var navslide = document.getElementById("header");
