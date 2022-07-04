@@ -7,8 +7,7 @@ window.addEventListener("load", function(){
 window.addEventListener("scroll" , function(){
   var navslide = document.getElementById("header");
   navslide.classList.toggle("sticky" , window.scrollY >300 );
-});
-
+})
 //nav toggle
 var navToggler = document.getElementById("nav-toggle");
 var menu = document.querySelector(".menu");
