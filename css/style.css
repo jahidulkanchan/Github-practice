@@ -366,7 +366,7 @@ header {
   }
   .banner-part .background-bg video{
     width: 100%;
-    min-height: 550px;
+    min-height: 600px;
     object-fit: cover;
   }
   .banner-part .background-bg::before{
