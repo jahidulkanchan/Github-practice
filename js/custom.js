@@ -42,3 +42,37 @@ $('.slide1').owlCarousel({
       }
   }
 });
+// progress bar
+var skillSection = document.getElementById('skill-section');
+var progressBar = document.querySelectorAll('.progress-bar');
+
+window.addEventListener('scroll',() =>{
+var sectionPos = skillSection.getBoundingClientRect().top;
+var sreenPos = window.innerHeight /1;
+
+function showProgress(){
+    progressBar.forEach(progressBar =>{
+        var value = progressBar.dataset.progress;
+        progressBar.style.opacity = 1;
+        progressBar.style.width = `${value}%`;
+    });
+}
+
+function hideProgress(){
+    progressBar.forEach(p =>{
+        p.style.opacity = 0;
+        p.style.width = 0;
+    });
+}
+    if( sectionPos < sreenPos){
+        showProgress();
+    }
+    // else{
+    //     hideProgress();
+    // }
+});
+//counter
+$('.counterup').counterUp({
+  delay: 10,
+  time: 1000
+});
