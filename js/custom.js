@@ -28,10 +28,10 @@ var ResultNo = document.getElementById('result-no');
 
 
 Yes.onclick = function(){
-  ResultYes.classList.toggle("active");
+  ResultYes.classList.add("active");
   ResultNo.classList.remove("active");
 };
 No.onclick = function(){
+  ResultNo.classList.add("active");
   ResultYes.classList.remove("active");
-  ResultNo.classList.toggle("active");
 };

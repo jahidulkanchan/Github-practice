@@ -1,5 +1,4 @@
 body{
-    background-color: cadetblue;
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin: 0px;
@@ -11,7 +10,10 @@ ul{
     margin: 0;
     list-style: none;
   }
-  a {
+  p{
+    font-size: 17px;
+  }
+  a{
     text-decoration: none;
   }
   a:hover{
@@ -22,32 +24,21 @@ ul{
     color: #ffffff;
     border: 1px solid #c0c0c0;
     display: inline-block;
-    width: 150px;
+    min-width: 140px;
     padding: 5px 0px;
     margin: 10px auto;
     text-align: center;
-    transition: .3s ease;
+    transition: .2s ease;
     z-index: 2;
     overflow: hidden;
     font-weight: 700;
-  }
-  .link::before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: -260px;
-    width: 160%;
-    height: 100%;
-    background-color: #60f000;
-    transform: skewX(-45deg);
-    z-index: -1;
-    transition: .3s ease;
   }
   .link:hover:before{
    left: -40px;
   }
   .link:hover{
-    color: #111111;
+    color: #c2c2c2;
+    border-color: #c2c2c2;
   }
   h1{
     text-transform: capitalize;
@@ -60,7 +51,7 @@ ul{
       display: inline-block;
     }
     body header .main-menu .menu{
-    top: 100px;
+    top: 89px;
     display: block;
     width: 100%;
     height: 0px;
@@ -108,6 +99,9 @@ ul{
   body .owl-nav{
   visibility: hidden;
   }
+  body .banner-part .banner-text h1{
+    margin-top: 50px;
+  }
   body .accordion-button::after{
   width: 20px !important;
   }
@@ -137,7 +131,7 @@ ul{
 /* Header-part */
 header {
     background-color: #ffffff;
-    height: 100px;
+    height: 90px;
     margin-bottom: 2px;
     text-transform: capitalize;
     z-index: 99999;
@@ -148,7 +142,7 @@ header {
     align-items: center;
   }
   header .container .logo{
-    color: #232323;
+    color: #060ea9;
   }
   header  .main-menu .menu{
     display: flex;
@@ -168,14 +162,14 @@ header {
     height: 3px;
     transform: scaleX(0);
     transition: all .3s ease;
-    background-color: #000000;
+    background-color: #060ea9;
   }
   header .main-menu .menu li:hover::before{
     transform: scaleX(1);
   }
   header .main-menu .menu li a{
     padding: 8px 5px 5px 5px;
-    color: #000000;
+    color: #060ea9;
     font-weight: 600;
     transition: all .2s ease;
     border-bottom: 3px solid #00000000;
@@ -198,8 +192,6 @@ header {
     right: 0;
     margin: 0 auto;
     z-index: 99999999;
-    background-color: #ffffff;
-    color: black;
     box-shadow: 0px 1px 5px 0px rgba(129, 129, 129, 0.445);
     transition: 0.3s ease;
   }
@@ -258,9 +250,10 @@ header {
 
   /* main */
   main{
-    height: 1500px;
+    min-height: 1000px;
   }
-  .proposal{
+  /* ---proposal--- */
+  /* .proposal{
     padding: 50px 0px;
     text-align: center;
     margin: 0 auto;
@@ -309,10 +302,28 @@ header {
   }
   .fa-heart{
     font-size: 30px;
+    padding: 0px 10px;
     color: #ff0000;
     animation-name: bit;
     animation-duration: .5s;
     animation-iteration-count: infinite;
+  }
+  .fa-face-angry{
+    font-size: 100px;
+    color: #000000;
+    display: block;
+  }
+  .fa-face-laugh-beam{
+    font-size: 100px;
+    color: #000000;
+  }
+  #result-yes h2{
+    margin-top: 10px;
+    padding: 5px 30px;
+  }
+  #result-no h2{
+    margin-top: 10px;
+    padding: 5px 30px;
   }
   @keyframes bit {
     0%{
@@ -324,22 +335,49 @@ header {
     100%{
       font-size: 20px;
     }
+  } */
+
+  /* banner-part */
+  .banner-part{
+    position: relative;
+    padding: 0px;
+    margin: 0px 0px;
   }
-  .fa-face-angry{
-    font-size: 100px;
-    color: #000000;
-    display: block;
+  .banner-part .banner-text{
+    top: 20px;
+    position: absolute;
   }
-  .fa-face-laugh-beam{
-    font-size: 100px;
-    color: #0015d4;
+  .banner-part .banner-text{
+    color: #ffffff;
   }
-  #result-yes h2{
-    margin-top: 10px;
-    padding: 5px 30px;
+  .banner-part .banner-text h1{
+    margin-top: 80px;
   }
-  #result-no h2{
-    margin-top: 10px;
-    padding: 5px 30px;
+  .banner-part .banner-text .link{
+    position: absolute;
+    bottom: -80px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid;
   }
+
+  .banner-part .background-bg{
+      position: relative;
+  }
+  .banner-part .background-bg video{
+    width: 100%;
+    min-height: 550px;
+    object-fit: cover;
+  }
+  .banner-part .background-bg::before{
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 99%;
+    background-color: #2c008a8e;
+  }
+
+  
 
