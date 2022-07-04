@@ -125,9 +125,9 @@ ul{
     min-width: 270px;
   }
   }
-  @media(max-width:576px){
+  /* @media(max-width:576px){
 
-  }
+  } */
 
 /* Header-part */
 header {
