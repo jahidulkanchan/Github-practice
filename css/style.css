@@ -102,6 +102,9 @@ ul{
   body .banner-part .banner-text h1{
     margin-top: 50px;
   }
+  body .banner-part .banner-text .link{
+    bottom: -50px;
+  }
   body .accordion-button::after{
   width: 20px !important;
   }
@@ -366,7 +369,7 @@ header {
   }
   .banner-part .background-bg video{
     width: 100%;
-    min-height: 650px;
+    min-height: 600px;
     object-fit: cover;
   }
   .banner-part .background-bg::before{
