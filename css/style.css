@@ -101,7 +101,7 @@ ul{
     body header .main-menu .menu li:hover::before{
     transform: scaleX(0);
     }
-    header .main-menu .menu li a:hover{
+    body header .main-menu .menu li a:hover{
       border-bottom: 3px solid #2293b6;
     }
     body .speaker-section .speaker-text{
@@ -116,6 +116,9 @@ ul{
   @media(max-width:768px){
     body #preloader{
       background-size: 25px;
+    }
+    body .about-section .row{
+      flex-wrap: wrap-reverse;
     }
     body .video-banner .content{
       padding: 100px 5%;
