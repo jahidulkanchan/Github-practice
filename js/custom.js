@@ -9,7 +9,7 @@ window.addEventListener("scroll" , function(){
   navslide.classList.toggle("sticky" , window.scrollY >200 );
 })
 //active menu
-// $(document).on('click', 'ul.menu li', function(){
+// $(document).on('click', 'ul.menu li a', function(){
 //   $(this).addClass('active').siblings().removeClass('active');
 // })
 //smoothscroll js
