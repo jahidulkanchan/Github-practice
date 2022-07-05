@@ -129,7 +129,14 @@ ul{
   body .subscribe-part input[type='email'] {
     min-width: 205px;
   }
+  body .contact-form .contact-info {
+    padding: 35px 10px 0px 10px;
   }
+  body .contact-form .contact-card {
+    padding: 50px 10px 0px 10px;
+    }
+  }
+
   @media(max-width:576px){
     body .subscribe-part input[type='email'] {
       max-width: 205px;
@@ -722,9 +729,8 @@ background-color: #F5F5F5 !important;
   .contact-form{
     padding: 50px 0px;
     min-height: 500px;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
   }
-
   .contact-form h1{
     color: #1789ac;
   }
@@ -735,20 +741,24 @@ background-color: #F5F5F5 !important;
   }
   .contact-form .contact-card h5{
       font-weight: bold;
+      color: #2293b6;
   }
   .contact-form .contact-card{
-      padding:50px;
+      padding: 50px 50px 30px 50px;
       background-color: #ffffff;
       border: none;
       border-radius: 8px;
       box-shadow: 0px 0px 5px 0px #c2c2c2;
   }
   .contact-form .contact-card .link{
-    color: #000000;
+    margin-top: 30px;
+    border: 1px solid #0f647e;
+    color: #2293b6;
+    background-color: transparent;
     width: 150px;
   }
   .contact-form .contact-card .link:hover{
-   background-color: #0f647e;
+   background-color: #2293b6;
    color: #ffffff;
   }
   .contact-card form{
@@ -760,13 +770,13 @@ background-color: #F5F5F5 !important;
       margin-bottom: 30px;
       border: none;
       outline: none;
-      border-radius: 40px;
-      background-color: #f1f1f1;
+      border-radius: 10px;
+      background-color: #fcfcfc;
   }
   .contact-card textarea{
-      background-color: #f1f1f1;
+      background-color: #fcfcfc;
       padding: 20px 12px;
-      border-radius: 20px;
+      border-radius: 10px;
       border: none;
       outline: none;
   }
@@ -778,8 +788,7 @@ background-color: #F5F5F5 !important;
   }
   .contact-form .contact-info span{
       font-weight: bold;
-      font-size: 18px;
-     
+      font-size: 18px;   
   }
   .contact-form .contact-info a{
     color: #388ca5;
@@ -797,7 +806,7 @@ background-color: #F5F5F5 !important;
       border-bottom: none;
       margin-bottom: 0;
   }
-      /* .subscribe-part */
+    /* .subscribe-part */
       .subscribe-part{
         padding: 80px 0px;
         text-align: center;
@@ -807,6 +816,7 @@ background-color: #F5F5F5 !important;
       .subscribe-part h1{
         margin-bottom: 20px;
         text-align: center;
+        color: #2c9bbd;
       }
       .subscribe-part input[type='email']{
         background-color: #ffffff;
@@ -833,7 +843,7 @@ background-color: #F5F5F5 !important;
     footer{
       padding: 30px 0px 0px 0px;
       min-height: 100px;
-      background-color: #2293b6;
+      background-color: #f0f0f0;
       display: flex;
       margin: 0 auto;
       text-align: center;
@@ -857,10 +867,11 @@ background-color: #F5F5F5 !important;
       align-items: center;
       width: 40px;
       height: 40px;
+      font-size: 17px;
       border-radius: 50px;
-      background-color: #efefef;
+      background-color: #ffffff;
       box-shadow: 0px 3px 5px 0px #0f647e;
-      color: #000000;
+      color: #2293b6;
       transition: .3s ease;
     }
     footer .social-icon ul li .fa-brands:hover{
