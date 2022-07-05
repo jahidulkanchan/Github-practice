@@ -114,7 +114,11 @@ ul{
     
   }
   @media(max-width:768px){
-  body .video-banner .content{
+    body #preloader{
+      background-size: 100%;
+      background-size: 25px;
+    }
+    body .video-banner .content{
       padding: 100px 5%;
     }
   body .banner-part .banner-text h1{
