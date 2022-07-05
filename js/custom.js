@@ -74,5 +74,5 @@ function hideProgress(){
 //counter
 $('.counterup').counterUp({
   delay: 10,
-  time: 1000
+  time: 1200
 });

@@ -317,7 +317,7 @@ header {
   }
 .service-section .top-text p{
     text-transform: uppercase;
-    color: #aeaeae;
+    color: #d0d0d0;
     font-weight: 600;
   }
   .service-section .top-text h1{
@@ -339,6 +339,9 @@ header {
     border-radius: 20px;
     transition: all .2s ease;
   }
+  .service-section .slider-part .item p{
+    color: #7d7d7d;
+  }
   .service-section .slider-part .item img{
     width: 70px;
     padding-bottom: 30px;
@@ -351,6 +354,12 @@ header {
     font-weight: bold;
     margin-bottom: 10px;
   }
+  .owl-theme .owl-dots .owl-dot span {
+    background: #e8e8e8 !important;
+    }
+    .owl-theme .owl-dots .owl-dot.active span {
+      background: #39a2ae !important;
+    }
 
 /* about-section */
 .about-section{
@@ -370,7 +379,7 @@ header {
 .link-box .link{
   padding: 8px 20px;
   margin: 20px 20px 10px 0px;
-  color: #8d8d8d;
+  color: #7d7d7d;
   border-color: #dadada;
   
 } 
@@ -406,7 +415,7 @@ header {
   font-size: 18px;
   float: left;
   margin-top: 10px;
-  color: #4e4e4e;
+  color: #7d7d7d;
 }
 /* speaker-section */
 .speaker-section{
@@ -419,7 +428,7 @@ header {
 }
 .speaker-section p{
   font-size: 18px;
-  color: #4e4e4e;
+  color: #7d7d7d;
 }
 .gallery-img, .speaker-img{
   position: relative;
@@ -513,7 +522,7 @@ header {
 /* course-section */
 .course-section{
   position: relative;
-  padding: 50px 0px 80px 0px;
+  padding: 50px 0px 30px 0px;
   background-color: #ffffff;
 }
 .course-section .left-bg img{
@@ -537,7 +546,7 @@ header {
 }
 .course-section .top-text p{
   text-transform: uppercase;
-  color: #7d7d7d;
+  color: #d0d0d0;
   font-size: 14px;
   font-weight: bold;
 }
@@ -553,8 +562,8 @@ header {
     font-size: 20px;
     font-weight: bold;
     transition: .3s ease;
-    border: 3px solid #3a3a3a;
-    color: #0d0d0d;
+    border: 3px solid #d0d0d0;
+    color: #d0d0d0;
     background-color: #ffffff !important;
     transition: all .2s ease;
   }
@@ -752,8 +761,8 @@ background-color: #F5F5F5 !important;
   }
   .contact-form .contact-card .link{
     margin-top: 30px;
-    border: 1px solid #0f647e;
-    color: #2293b6;
+    border: 2px solid #f0f0f0;
+    color: #3a9cba;
     background-color: transparent;
     width: 150px;
   }
@@ -787,8 +796,9 @@ background-color: #F5F5F5 !important;
       padding: 35px 40px 0px 40px;
   }
   .contact-form .contact-info span{
-      font-weight: bold;
-      font-size: 18px;   
+      font-size: 15px;
+      font-weight: 500;
+      color: #7d7d7d;   
   }
   .contact-form .contact-info a{
     color: #388ca5;
@@ -823,7 +833,7 @@ background-color: #F5F5F5 !important;
         color: #000000;
         padding: 9px 20px;
         min-width: 350px;
-        border: 1px solid #858585c7;
+        border: 1px solid #d0d0d0;
         outline: none;
         border-radius: 50px 0px 0px 50px;
       }
