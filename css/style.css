@@ -115,7 +115,6 @@ ul{
   }
   @media(max-width:768px){
     body #preloader{
-      background-size: 100%;
       background-size: 25px;
     }
     body .video-banner .content{
