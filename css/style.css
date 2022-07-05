@@ -95,14 +95,11 @@ ul{
     body header .main-menu .menu li{ 
         line-height: 60px;
     }
-    body header .main-menu .menu li::before{
-      display: none;
+    body header .main-menu .menu li a::before{
+      display: inline-block;
     }
     body header .main-menu .menu li:hover::before{
     transform: scaleX(0);
-    }
-    body header .main-menu .menu li a:hover{
-      border-bottom: 3px solid #2293b6;
     }
     body .speaker-section .speaker-text{
       padding: 0px 0px 20px 0px;
@@ -173,23 +170,27 @@ header {
   }
   header .main-menu .menu li{
     margin: 0px 15px;
+  }
+  header .main-menu .menu li a{
     position: relative;
   }
-  header .main-menu .menu li::before{
+  header .main-menu .menu li a::before{
     position: absolute;
     content: '';
+    left: 0;
     bottom: -4px;
     width: 100%;
     height: 3px;
     transform: scaleX(0);
-    transition: all .3s ease;
     background-color: #2293b6;
   }
-  header .main-menu .menu li:hover::before{
+  header .main-menu .menu li a:hover::before{
     transform: scaleX(1);
+    transition: all .3s ease;
   }
-  header .main-menu .menu li .active:hover::before{
+  header .main-menu .menu li a.active::before{
     transform: scaleX(1);
+    transition: all .3s ease;
   }
   header .main-menu .menu li a{
     padding: 8px 5px 5px 5px;
@@ -723,7 +724,7 @@ background-color: #F5F5F5 !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
+    min-height: 180px;
     border: none;   
     border-radius: 10px;
     margin-bottom: 40px;
@@ -759,7 +760,7 @@ background-color: #F5F5F5 !important;
       color: #2293b6;
   }
   .contact-form .contact-card{
-      padding: 50px 50px 30px 50px;
+      padding: 30px 50px 30px 50px;
       background-color: #ffffff;
       border: none;
       border-radius: 8px;
