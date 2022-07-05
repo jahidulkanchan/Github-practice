@@ -617,7 +617,7 @@ header {
   }
 /*  .accordion-progress  */
 .accordion-progress{
-  padding: 100px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
   background-color: #ffffff;
   min-height: 300px;
 }
@@ -655,7 +655,7 @@ background-color: #F5F5F5 !important;
 }
 /* progress-part */
 .progress-part{
-  min-height: 500px;
+  min-height: 350px;
 }
 .progress-part .content{
   padding: 0px 10% 40px 0;
@@ -703,7 +703,7 @@ background-color: #F5F5F5 !important;
   .counter-part{
     position: relative;
     text-align: center;
-    padding: 150px 0px 100px 0px;
+    padding: 50px 0px;
     min-height: 300px;
     background-size: cover;
     background-color: #298eac;
@@ -746,7 +746,7 @@ background-color: #F5F5F5 !important;
   .contact-form .card{
       margin-top: 40px;
       border-radius: 15px;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
   }
   .contact-form .contact-card h5{
       font-weight: bold;
@@ -818,7 +818,7 @@ background-color: #F5F5F5 !important;
   }
     /* .subscribe-part */
       .subscribe-part{
-        padding: 80px 0px;
+        padding: 50px 0px 20px 0px;
         text-align: center;
         min-height: 300px;
         background-color: #ffffff;
