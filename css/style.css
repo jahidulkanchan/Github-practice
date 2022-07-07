@@ -103,7 +103,7 @@ ul{
     body #preloader{
       background-size: 25px;
     }
-    body .about-section .row{
+    body .about-section .reverse{
       flex-wrap: wrap-reverse;
     }
     body .video-banner .content{
