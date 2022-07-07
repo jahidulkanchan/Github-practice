@@ -60,6 +60,7 @@ ul{
     font-weight: bold;
   }
   h1{
+    font-family: cursive;
     text-transform: capitalize;
     text-align: left;
   }
@@ -166,6 +167,7 @@ header {
   }
   header .container .logo{
     color: #2293b6;
+    font-family: cursive;
   }
   header  .main-menu .menu{
     display: flex;
@@ -330,7 +332,8 @@ header {
 .service-section .top-text p{
     text-transform: uppercase;
     color: #d0d0d0;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 14px;
   }
   .service-section .top-text h1{
     line-height: 10px;
