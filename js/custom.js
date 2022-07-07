@@ -1,13 +1,14 @@
-//preloader 
+//Preloader 
 var preload = document.getElementById("preloader");
 window.addEventListener("load", function(){
     preload.style.display = "none";
 });
-//sticky nav  
+//Sticky Nav  & TopScroll
 window.addEventListener("scroll" , function(){
+//Sticky Nav
   var navSlide = document.getElementById("header");
   navSlide.classList.toggle("sticky" , window.scrollY >200 );
-  //TopScroll
+//TopScroll
   var topScroll = document.getElementById("top-scroll");
   topScroll.addEventListener('click',function(){
       $(window).scrollTop(0);
@@ -19,7 +20,8 @@ window.addEventListener("scroll" , function(){
 // $(document).on('click', 'ul.menu li a', function(){
 //   $(this).addClass('active').siblings().removeClass('active');
 // })
-//smoothscroll js
+
+//Smooth-scroll js
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
   $('.scroll-to-section a[href^="#"]').on('click', function (e) {
