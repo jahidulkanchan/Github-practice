@@ -10,7 +10,7 @@ window.addEventListener("scroll" , function(){
   navSlide.classList.toggle("sticky" , window.scrollY >200 );
 //TopScroll
   var topScroll = document.getElementById("top-scroll");
-  topScroll.addEventListener('click',function(){
+  topScroll.addEventListener('click', function(){
       $(window).scrollTop(0);
   });
   topScroll.classList.toggle("visible", window.scrollY >400 );
