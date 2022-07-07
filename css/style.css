@@ -144,6 +144,11 @@ ul{
     body .subscribe-part input[type='email'] {
       max-width: 205px;
     }
+    body #top-scroll{
+      font-size: 16px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
 /* Header-part */
@@ -915,6 +920,29 @@ background-color: #F5F5F5 !important;
     }
     footer a:hover{
       color: #ffffff;
+    }
+    #top-scroll{
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 18px;
+      right: 30px;
+      bottom: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      background-color: #0e82a5c2;
+      z-index: 99999;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .4s ease;
+    }
+    #top-scroll.visible{
+      opacity: 1;
+      visibility: visible;
     }
 
 

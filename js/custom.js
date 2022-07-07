@@ -5,9 +5,16 @@ window.addEventListener("load", function(){
 });
 //sticky nav  
 window.addEventListener("scroll" , function(){
-  var navslide = document.getElementById("header");
-  navslide.classList.toggle("sticky" , window.scrollY >200 );
+  var navSlide = document.getElementById("header");
+  navSlide.classList.toggle("sticky" , window.scrollY >200 );
+  //TopScroll
+  var topScroll = document.getElementById("top-scroll");
+  topScroll.addEventListener('click',function(){
+      $(window).scrollTop(0);
+  });
+  topScroll.classList.toggle("visible", window.scrollY >400 );
 })
+
 //active menu
 // $(document).on('click', 'ul.menu li a', function(){
 //   $(this).addClass('active').siblings().removeClass('active');
