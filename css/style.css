@@ -288,21 +288,28 @@ header .main-menu .menu li a{
     height: 100%;
     transition: 0.3s ease;
     background-color: #2293b6;
+    transition: top .2s .2s ease, transform .2s ease;
+    -webkit-transition: top .2s .2s ease, transform .2s ease;
+  }
+  #nav-toggle span::before {
+    top: -8px;
   }
   #nav-toggle.active span::before {
+    top: 0px;
+    transition: top .2
+    s ease, transform .2s .2s ease;-webkit-transition: top .2s ease, transform .2s .2s ease;
     transform: rotate(45deg);
     width: 100%;
   }
-  #nav-toggle span::before {
-    transform: translateY(-7px);
+  #nav-toggle span::after {
+    top: 8px;
   }
   #nav-toggle.active span::after {
-    transform: rotate(135deg);
+    top: 0px;
+    transition: top .2s ease,  transform .2s .2s ease;
+    -webkit-transition: top .2s ease, transform .2s .2s ease;
+    transform: rotate(-45deg);
     width: 100%;
-  }
-
-  #nav-toggle span::after {
-    transform: translateY(7px);
   }
   /* banner-part */
   .banner-part{
