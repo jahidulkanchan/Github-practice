@@ -3,6 +3,9 @@ var preload = document.getElementById("preloader");
 window.addEventListener("load", function(){
     preload.style.display = "none";
 });
+//wow js
+new WOW().init();
+
 //Sticky Nav  & TopScroll
 window.addEventListener("scroll" , function(){
 //Sticky Nav
@@ -98,7 +101,7 @@ var progressBar = document.querySelectorAll('.progress-bar');
 
 window.addEventListener('scroll',() =>{
 var sectionPos = skillSection.getBoundingClientRect().top;
-var sreenPos = window.innerHeight /1;
+var sreenPos = window.innerHeight /1.2;
 
 function showProgress(){
     progressBar.forEach(progressBar =>{
@@ -117,9 +120,9 @@ function hideProgress(){
     if( sectionPos < sreenPos){
         showProgress();
     }
-    // else{
-    //     hideProgress();
-    // }
+    else{
+        hideProgress();
+    }
 });
 //counter
 $('.counterup').counterUp({
