@@ -346,6 +346,7 @@ header .main-menu .menu li a{
   .banner-part .background-bg video{
     width: 100%;
     min-height: 520px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .banner-part .background-bg::before{
@@ -462,7 +463,8 @@ header .main-menu .menu li a{
   height: 48px;
  border-radius: 50px;
  border: 2px solid #ffffff;
- object-fit: cover;
+ -o-object-fit: cover;
+    object-fit: cover;
 }
 .client-text{
   font-size: 18px;
@@ -652,7 +654,22 @@ header .main-menu .menu li a{
   .course-section .tab-pane.active{
     min-height: 400px;
     transition: all .2s ease;
+    -webkit-animation: animated .4s 0s linear;
     animation: animated .4s 0s linear;
+  }
+  @-webkit-keyframes animated {
+    0%{
+      margin-left: 50px;
+      opacity: 1;
+    }
+    80%{
+      opacity: 0;
+      margin-left: 60px;
+    }
+    100%{
+      opacity: 1;
+      margin-left: 50px;
+    }
   }
   @keyframes animated {
     0%{
@@ -680,9 +697,9 @@ header .main-menu .menu li a{
 .accordion-part{
   margin-bottom: 80px;
 }
-.accorion-body{
+.accordion-body{
   box-shadow: 0px 0px 2px 0px rgb(202, 202, 202);
-  background-color: #f4fffa !important;
+  background-color: #efefef !important;
   padding: 5px 10px !important; 
 }
 .accordion-button{
