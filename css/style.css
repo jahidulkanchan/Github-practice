@@ -180,7 +180,6 @@ ul{
 header {
   background-color: #ffffff;
   height: 90px;
-  margin-bottom: 2px;
   text-transform: capitalize;
   z-index: 99999;
 }
@@ -351,7 +350,7 @@ header .main-menu .menu li a{
   }
   .banner-part .background-bg::before{
     position: absolute;
-    top: 0px;
+    top: 1px;
     left: 0px;
     content: '';
     width: 100%;
