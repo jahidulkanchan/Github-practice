@@ -101,7 +101,7 @@ var progressBar = document.querySelectorAll('.progress-bar');
 
 window.addEventListener('scroll',() =>{
 var sectionPos = skillSection.getBoundingClientRect().top;
-var sreenPos = window.innerHeight /1.2;
+var screenPos = window.innerHeight /1.2;
 
 function showProgress(){
     progressBar.forEach(progressBar =>{
@@ -117,12 +117,12 @@ function hideProgress(){
         p.style.width = 0;
     });
 }
-    if( sectionPos < sreenPos){
+    if( sectionPos < screenPos){
         showProgress();
     }
-    else{
-        hideProgress();
-    }
+    // else{
+    //     hideProgress();
+    // }
 });
 //counter
 $('.counterup').counterUp({
