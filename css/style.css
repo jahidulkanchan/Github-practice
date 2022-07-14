@@ -454,10 +454,10 @@ header .main-menu .menu li a{
   margin-left: -5px;
   
 }
-.about-section .img-bg{
+/* .about-section .img-bg{
   position: relative;
   overflow: hidden;
-}
+} */
 /* .about-section .img-bg::after{
   position: absolute;
   top: 0;
