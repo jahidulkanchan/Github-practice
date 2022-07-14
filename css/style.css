@@ -471,7 +471,7 @@ header .main-menu .menu li a{
   background-position: -20px center;
   z-index: -1;
   overflow: hidden;
-  animation: spin 8s infinite alternate;
+  animation: spin 8s infinite linear alternate;
 }
 @keyframes  spin{
   0%{
