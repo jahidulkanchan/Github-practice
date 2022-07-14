@@ -456,7 +456,7 @@ header .main-menu .menu li a{
 }
 .about-section .img-bg{
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
  .about-section .img-bg::after{
   position: absolute;
@@ -470,7 +470,7 @@ header .main-menu .menu li a{
   background-repeat: no-repeat;
   background-position: -20px center;
   z-index: -1;
-  overflow-x: hidden;
+  overflow: hidden;
   animation: spin 8s infinite alternate;
 }
 @keyframes  spin{
