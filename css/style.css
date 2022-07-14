@@ -336,7 +336,7 @@ header .main-menu .menu li a{
     position: absolute;
     bottom: -80px;
     font-size: 17px;
-    border-radius: 5px;
+    border-radius: 0px;
     border: 2px solid;
   }
 
@@ -845,6 +845,7 @@ background-color: #F5F5F5 !important;
     margin-top: 30px;
     border: 2px solid #d8d7d7;
     color: #000000;
+    border-radius: 0px;
     background-color: transparent;
     width: 150px;
   }
@@ -870,8 +871,7 @@ background-color: #F5F5F5 !important;
       padding: 20px 12px;
       border-radius: 10px;
       border: none;
-      outline: none;
-      
+      outline: none; 
   }
   .contact-form .contact-info{
       margin-top: 40px;
