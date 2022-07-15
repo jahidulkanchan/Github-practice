@@ -65,16 +65,16 @@ function onScroll(event){
 
 //nav toggle
 var navToggler = document.getElementById("nav-toggle");
-var menu = document.querySelector(".menu");
+var mainMenu = document.getElementById('main-menu');
 
 navToggler.onclick = function () {
   navToggler.classList.toggle("active");
-  menu.classList.toggle("active");
+  mainMenu.classList.toggle("active");
 };
 document.onclick = function (e) {
-  if (e.target.id !== "nav-toggle" && e.target.classList !== "menu") {
+  if (e.target.id !== "main-menu" && e.target.id !== "nav-toggle") {
     navToggler.classList.remove("active");
-    menu.classList.remove("active");
+    mainMenu.classList.remove("active");
   }
 };
 //owl carousel
