@@ -3,6 +3,7 @@ var preload = document.getElementById("preloader");
 window.addEventListener("load", function(){
     preload.style.display = "none";
 });
+
 //wow js
 new WOW().init();
 
@@ -10,13 +11,14 @@ new WOW().init();
 window.addEventListener("scroll" , function(){
 //Sticky Nav
   var navSlide = document.getElementById("header");
-  navSlide.classList.toggle("sticky" , window.scrollY >200 );
+  navSlide.classList.toggle("sticky" , window.scrollY > 200 );
+
 //TopScroll
   var topScroll = document.getElementById("top-scroll");
   topScroll.addEventListener('click', function(){
       $(window).scrollTop(0);
   });
-  topScroll.classList.toggle("visible", window.scrollY >400 );
+  topScroll.classList.toggle("visible", window.scrollY > 400 );
 })
 
 //active menu
