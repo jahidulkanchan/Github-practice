@@ -82,7 +82,9 @@ ul{
         visibility: visible;
     }
     body header .main-menu .menu li{ 
-        line-height: 60px;
+      margin: 0 auto;
+      line-height: 60px;
+      width: 100px;
     }
     body header .main-menu .menu li a::before{
       display: inline-block;
@@ -143,7 +145,7 @@ ul{
       min-height: 550px;
     }
   }
-  /*   Preloader    */
+/*   Preloader    */
 #preloader{
   position: fixed;
   width: 100%;

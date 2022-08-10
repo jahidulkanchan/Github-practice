@@ -11,7 +11,7 @@ new WOW().init();
 window.addEventListener("scroll" , function(){
 //Sticky Nav
   var navSlide = document.getElementById("header");
-  navSlide.classList.toggle("sticky" , window.scrollY > 200 );
+  navSlide.classList.toggle("sticky", window.scrollY > 200 );
 
 //TopScroll
   var topScroll = document.getElementById("top-scroll");
@@ -71,12 +71,14 @@ navToggler.onclick = function () {
   navToggler.classList.toggle("active");
   mainMenu.classList.toggle("active");
 };
-document.onclick = function (e) {
-  if (e.target.id !== "main-menu" && e.target.id !== "nav-toggle") {
-    navToggler.classList.remove("active");
-    mainMenu.classList.remove("active");
-  }
-};
+
+document.addEventListener('click', function(e){
+    if (e.target.id !== "menu" && e.target.id !== "nav-toggle") {
+        navToggler.classList.remove("active");
+        mainMenu.classList.remove("active");
+      }
+});
+
 //owl carousel
 $('.slide1').owlCarousel({
   loop: true,
@@ -129,5 +131,5 @@ function hideProgress(){
 //counter
 $('.counterup').counterUp({
   delay: 10,
-  time: 1200
+  time: 1000
 });
