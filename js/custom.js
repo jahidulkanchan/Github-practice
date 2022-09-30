@@ -15,10 +15,10 @@ window.addEventListener("scroll" , function(){
 
 //TopScroll
   var topScroll = document.getElementById("top-scroll");
+  topScroll.classList.toggle("visible", window.scrollY > 400 );
   topScroll.addEventListener('click', function(){
       $(window).scrollTop(0);
   });
-  topScroll.classList.toggle("visible", window.scrollY > 400 );
 })
 
 //active menu
