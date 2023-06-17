@@ -257,7 +257,10 @@ header .main-menu .menu li a{
   background-color: #60f000;
   color: #000000;
 } */
-
+header .logo img{
+  margin-top: -10px;
+  width: 35px;
+}
   header.hide{
     transform: translateY(-90px);
   }
