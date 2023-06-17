@@ -4,15 +4,29 @@ window.addEventListener("load", function(){
     preload.style.display = "none";
 });
 
+
+
+
 //wow js
 new WOW().init();
 
-//Sticky Nav  & TopScroll
-window.addEventListener("scroll" , function(){
 //Sticky Nav
-  var navSlide = document.getElementById("header");
-  navSlide.classList.toggle("sticky", window.scrollY > 200 );
+let navSlide = document.getElementById("header");
+let prevPos = window.scrollY;
+window.addEventListener('scroll', ()=>{
+  let newPos = window.scrollY;
+  if(newPos > prevPos){
+ 
+    navSlide.classList.add('hide');
+  }
+  else{
+    navSlide.classList.remove('hide');
+  }
+   prevPos = newPos;
+})
 
+//TopScroll
+window.addEventListener("scroll" , function(){
 //TopScroll
   var topScroll = document.getElementById("top-scroll");
   topScroll.classList.toggle("visible", window.scrollY > 400 );
